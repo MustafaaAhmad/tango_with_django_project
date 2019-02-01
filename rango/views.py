@@ -124,7 +124,7 @@ def user_login(request):
 
 @login_required
 def restricted(request):
-    return HttpResponse("only users who have logged in can see this text!")
+    return HttpResponse("since you're logged in, you can see this text!")
 
 @login_required
 def user_logout(request):
